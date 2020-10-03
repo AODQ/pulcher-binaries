@@ -1,10 +1,25 @@
-# linux distribution
+# pulcher binaries
 
-Running this might be tricky with dependencies, though I am trying to get this
-to work on all linux distros as possible.
+This is a distribution of compiled pulcher binaries. You must select a branch
+that corresponds to your OS (linux or win64 only for now).
 
-running
+linux
+```
+git checkout linux
+```
+
+windows (64-bit)
+```
+git checkout win64
+```
+
+then perform the following once
 
 ```
-./pulcher-client
+git submodule update --init --recursive
+```
+
+to fetch updates perform the following
+```
+git pull
 ```
