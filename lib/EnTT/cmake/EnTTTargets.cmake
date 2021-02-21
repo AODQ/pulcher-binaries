@@ -56,7 +56,7 @@ add_library(EnTT::EnTT INTERFACE IMPORTED)
 set_target_properties(EnTT::EnTT PROPERTIES
   INTERFACE_COMPILE_FEATURES "cxx_std_17"
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include"
-  INTERFACE_PRECOMPILE_HEADERS "/home/toad/repo/dtoadq/pulcher/repo/third-party/entt/src/entt/entt.hpp"
+  INTERFACE_PRECOMPILE_HEADERS "/home/toad/repo/pulcher/repo/third-party/entt/src/entt/entt.hpp"
 )
 
 if(CMAKE_VERSION VERSION_LESS 3.0.0)
